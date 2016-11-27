@@ -69,13 +69,10 @@
 
             var part1 = Karat(A, C);
             var part2 = Karat(B, D);
-            /* var part3a = Karat(A, D);
-               var part3b = Karat(B, C);
-               var part3 = Sum_arr(part3a, part3b);
-            */
             var part3a = Sub_arr(Karat(rem_lead_zer(Sum_arr(A,B)),rem_lead_zer(Sum_arr(C,D))),part1);
             var part3 = Sub_arr(part3a,part2).toString();
             //var part3a = Sub_arr(Karat(Sum_arr(A,B),Sum_arr(C,D)),part1);
+
             //padding the parts with zeroes as required
             for (var i = 0; i < mLen; i++)
             {
